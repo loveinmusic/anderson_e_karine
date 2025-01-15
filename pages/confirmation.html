@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Pagamento - LoveInMusic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .confirmation-container {
+            display: flex;
+            flex-direction: column ;
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .confirmation-container h1 {
+            color: #2b2d42;
+        }
+        .confirmation-container p {
+            color: #6c757d;
+            font-size: 1.2rem;
+        }
+        .confirmation-container img {
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            width: 200px;
+        }
+        .confirmation-container button {
+            padding: 10px 20px;
+            background-color: #2b2d42;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .confirmation-container button:hover {
+            background-color: #495057;
+        }
+    </style>
+</head>
+<body>
+    <div class="confirmation-container">
+        <h1>Pagamento Confirmado!</h1>
+        <p>Obrigado por escolher a LoveInMusic. Seu pagamento foi processado com sucesso.</p>
+        <img src="../images/3d-hand-using-online-banking-app-smartphone.jpg" alt="Confirmação de Pagamento">
+        <button onclick="window.location.href='../index.html'">Voltar para a Página Inicial</button>
+        <button onclick="window.location.href='https://wa.me/5581987630519?text=Ol%C3%A1%2C+segue+em+anexo+o+comprovante+do+meu+pagamento.'">Enviar Comprovante via WhatsApp</button>
+    </div>
+</body>
+</html>
