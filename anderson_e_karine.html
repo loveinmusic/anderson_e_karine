@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love of my life</title>
+    <link rel="stylesheet" href="css/main 1/styles.css">
+    <link rel="icon" href="images\favicon-32x32.png" type="image/x-icon">
+    <style>
+        /* style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.music-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.music-player button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.music-player input[type="range"] {
+  flex: 1;
+  cursor: pointer;
+  background: transparent;
+}
+    </style>
+</head>
+<body>
+    <audio id="romanticMusic" src="music/Ed Sheeran - Perfect.mp3" preload="auto"></audio>
+    <header>
+        <h1>10 de Dezembro de 2023</h1>
+    </header>
+
+    <div class="slideshow-container">
+        <!-- Slides -->
+        <div class="slide">
+          <img src="images/slide-line2.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+          <img src="images/slide-line3.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+          <img src="images/slide-line4.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+          <img src="images/slide-line5.jpg" alt="Image 4">
+        </div>
+        <div class="slide">
+          <img src="images/slide-line6.jpg" alt="Image 5">
+        </div>
+      </div>
+    
+      <!-- Barra de progresso com corações -->
+      <div class="progress-bar">
+        <span class="heart active" data-index="0">❤️</span>
+        <span class="heart" data-index="1">🤍</span>
+        <span class="heart" data-index="2">🤍</span>
+        <span class="heart" data-index="3">🤍</span>
+        <span class="heart" data-index="4">🤍</span>
+      </div>
+    
+
+    <!-- Seção do Contador -->
+    <section class="elapsed-time-container">
+        <h2>Anderson e Karine</h2>
+        <p class="justify">
+            Obrigado por cada sorriso, cada abraço, cada momento que compartilhamos. Descobri que o amor
+            verdadeiro existe ao seu lado. Você é meu tudo, minha razão de viver. Nada pode apagar o que
+            sinto por você, é eterno. Sempre estarei com você, onde quer que esteja.
+        </p>
+        <h3>Juntos há</h3>
+        <div id="elapsed-time">
+            <div class="time-box">
+                <span class="time" id="years">00</span>
+                <p>Ano</p>
+            </div>
+            <div class="time-box">
+                <span class="time" id="months">00</span>
+                <p>Meses</p>
+            </div>
+            <div class="time-box">
+                <span class="time" id="days">00</span>
+                <p>Dias</p>
+            </div>
+            <div class="time-box">
+                <span class="time" id="hours">00</span>
+                <p>Horas</p>
+            </div>
+            <div class="time-box">
+                <span class="time" id="minutes">00</span>
+                <p>Minutos</p>
+            </div>
+            <div class="time-box">
+                <span class="time" id="seconds">00</span>
+                <p>Segundos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Player de música -->
+  <div class="music-player">
+    <audio id="audioPlayer" loop autoplay>
+      <source src="music/Ed Sheeran - Perfect.mp3" type="audio/mpeg">
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <button id="playPauseBtn">
+      <span id="playIcon">▶️</span>
+      <span id="pauseIcon" style="display: none;">⏸️</span>
+    </button>
+    <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.5">
+  </div>
+
+    <script src="script/slide.js"></script>
+    <script src="script/date.js"></script>
+    <script src="script/music.js"></script>
+</body>
+</html>
